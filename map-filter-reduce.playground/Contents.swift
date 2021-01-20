@@ -52,6 +52,11 @@ let names : [String?] = ["Dave", nil, "Boby", nil, "Yannis", nil]
 let validNames = names.compactMap{$0}
 print("Non-nil array using compactMap: \(validNames)")
 
+//extracting only Int values from string array to new Int array.
+let someNums = ["51", "17", "23", "number"]
+let ints = someNums.compactMap{Int($0)}
+print("Integer values: \(ints)")
+
 //MARK: - Chaining methods
 //def:      all methods can be chained and used together
 let randomNumbers = [1, 2, 3, 4, 5, 6]
